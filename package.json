@@ -1,7 +1,7 @@
 {
   "name": "authentication",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js Authentication API",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,38 +10,20 @@
   },
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.0",
-    "@radix-ui/react-slot": "^1.1.0",
     "body-parser": "^1.20.2",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "fetch": "^1.1.0",
-    "framer-motion": "^11.3.19",
     "googleapis": "^105.0.0",
-    "lucide-react": "^0.417.0",
-    "mongoose": "^8.6.2",
-    "next": "14.2.5",
-    "process": "^0.11.10",
-    "react": "^18",
-    "react-calendly": "^4.3.1",
-    "react-dom": "^18",
-    "react-router-dom": "^6.26.1",
-    "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
+    "mongoose": "^8.6.2"
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0",
+    "nodemon": "^2.0.22",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-scroll": "^1.8.10",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "react-scroll": "^1.9.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "eslint": "^8"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }
