@@ -1,0 +1,7 @@
+# Ignore node_modules directory
+node_modules/
+
+# Optional: Ignore other files or directories you don't want to track
+dist/
+.env
+.DS_Stor
