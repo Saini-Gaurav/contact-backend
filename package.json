@@ -5,10 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node index.js",    
+    "dev": "nodemon index.js"    
   },
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.0",
