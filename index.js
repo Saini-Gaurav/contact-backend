@@ -8,7 +8,11 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow requests from this origin
+    origin: [
+      "http://localhost:3000", // Allow requests from localhost
+      "https://landing-page-saas-pi.vercel.app", // Allow requests from Vercel
+      "https://landing-page-saas-pi.vercel.app/#contact" // Allow requests from the specific contact page
+    ], // Allow requests from this origin
     methods: "GET,POST,PUT,DELETE", // Specify the allowed HTTP methods
     allowedHeaders: "Content-Type", // Allow certain headers
     credentials: true, // Allow cookies if needed
