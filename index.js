@@ -12,14 +12,16 @@ app.use(
       "http://localhost:3000", // Allow requests from localhost
       "https://landing-page-saas-pi.vercel.app", // Allow requests from Vercel
       "https://landing-page-saas-pi.vercel.app/#contact",
-      "https://www.corazor.com/",
+      "https://www.corazor.com",
       "https://www.corazor.com/#contact" // Allow requests from the specific contact page
     ], // Allow requests from this origin
     methods: "GET,POST,PUT,DELETE", // Specify the allowed HTTP methods
     allowedHeaders: "Content-Type", // Allow certain headers
     credentials: true, // Allow cookies if needed
-  })
-);
+  }), (req, res, next) => {
+    console.log('CORS Request:', req.headers.origin);
+    next();
+  });
 
 mongoose
   .connect(process.env.MONGODB_URI)
