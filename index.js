@@ -12,7 +12,8 @@ app.use(
       "http://localhost:3000", // Allow requests from localhost
       "https://landing-page-saas-pi.vercel.app", // Allow requests from Vercel
       "https://landing-page-saas-pi.vercel.app/#contact",
-      "https://www.corazor.com/" // Allow requests from the specific contact page
+      "https://www.corazor.com/",
+      "https://www.corazor.com/#contact" // Allow requests from the specific contact page
     ], // Allow requests from this origin
     methods: "GET,POST,PUT,DELETE", // Specify the allowed HTTP methods
     allowedHeaders: "Content-Type", // Allow certain headers
